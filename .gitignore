@@ -1,0 +1,13 @@
+**/.idea
+
+**/.DS_Store
+**/node_modules
+**/build
+**/*.log
+**/size-plugin.json
+**/.scannerwork
+**/.expo
+**/web-build
+**/samlConfig.json
+**/test-results.json
+scratch-files/**

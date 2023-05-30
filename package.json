@@ -1,0 +1,35 @@
+{
+  "name": "automation-suite",
+  "version": "1.0.0",
+  "description": "automation suite for testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "chrome": "cypress run --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kedarbillgo/automation-suite.git"
+  },
+  "keywords": [
+    "Cypress",
+    "Testing",
+    "Testing",
+    "UI",
+    "Testing",
+    "UI",
+    "Automation",
+    "React",
+    "Preact"
+  ],
+  "author": "kedar.kulkarni@billgo.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kedarbillgo/automation-suite/issues"
+  },
+  "homepage": "https://github.com/kedarbillgo/automation-suite#readme",
+  "devDependencies": {
+    "cypress": "^12.10.0",
+    "dotenv": "^16.0.3"
+  }
+}

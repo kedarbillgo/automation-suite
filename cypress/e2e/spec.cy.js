@@ -25,6 +25,7 @@ describe('Create a Last Mile Record', function () {
 
   it('Visit Billers tab and click on add billers', function() {
     cy.pageLoadWait('dashboard/billers')
+    cy.wait(5000)
     cy.get('button#blgo-add-bills').click()
   })
 

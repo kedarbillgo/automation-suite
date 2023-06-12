@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/kedarbillgo/automation-suite#readme",
   "devDependencies": {
-    "cypress": "^12.13.0",
     "dotenv": "^16.0.3"
   }
 }

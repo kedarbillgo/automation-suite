@@ -12,3 +12,12 @@ https://www.velotio.com/engineering-blog/full-stack-qa-testing-using-cypress
 
 Okta authentication in cypress
 https://docs.cypress.io/guides/end-to-end-testing/okta-authentication
+
+
+
+best practices
+https://docs.cypress.io/guides/references/best-practices
+
+
+session mgt
+https://docs.cypress.io/api/commands/session

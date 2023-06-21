@@ -1,10 +1,11 @@
 {
   "name": "automation-suite",
+  "type": "module",
   "version": "1.0.0",
   "description": "automation suite for testing",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open",
+    "test": "jest --testTimeout=65000",
     "chrome": "cypress run --headed"
   },
   "repository": {
@@ -29,6 +30,8 @@
   },
   "homepage": "https://github.com/kedarbillgo/automation-suite#readme",
   "devDependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "jest": "^29.5.0",
+    "puppeteer": "^20.7.2"
   }
 }

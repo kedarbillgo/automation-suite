@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress open",
-    "chrome": "cypress run --headed"
+    "chrome": "cypress run --headed",
+    "wdio": "wdio run ./wdio.conf.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/kedarbillgo/automation-suite#readme",
   "devDependencies": {
+    "@wdio/cli": "^8.11.2",
     "dotenv": "^16.0.3"
   }
 }

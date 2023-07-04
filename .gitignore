@@ -196,3 +196,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,vapor
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/playwright/.auth/

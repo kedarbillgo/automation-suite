@@ -10,27 +10,26 @@ module.exports = {
      * Login page element selectors
      */
     const login = {
-      username: "#idp-discovery-username",
-      password: "#okta-signin-password",
-      idp: "#idp-discovery-submit",
-      signin: "#okta-signin-submit",
-      bpuiSignInWidget: "#sign-in-widget",
-      oktaUsername: "#okta-signin-username",
+      inputUsername: "#idp-discovery-username",
+      inputPassword: "#okta-signin-password",
+      btnIdp: "#idp-discovery-submit",
+      btnSignin: "#okta-signin-submit",
+      inputOktaUsername: "#okta-signin-username",
       appRootEle: "#shadow-root-host-TabLayout",
       folderPath: "login",
     };
 
     await page.goto(use.authURL);
 
-    await page.type(login.username, use.username);
-    await page.click(login.idp);
+    await page.type(login.inputUsername, use.username);
+    await page.click(login.btnIdp);
 
-    await page.type(login.password, use.password);
-    await page.click(login.signin);
+    await page.type(login.inputPassword, use.password);
+    await page.click(login.btnSignin);
     await page.screenshot({ path: `artifacts/${fileName().short}/screenshots/${fileName().full}_okta_login.png` });
 
-    await page.locator(login.oktaUsername).fill(use.username);
-    await page.click(login.signin);
+    await page.locator(login.inputOktaUsername).fill(use.username);
+    await page.click(login.btnSignin);
 
     await page.context().storageState({ path: authFile });
 

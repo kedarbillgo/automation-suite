@@ -1,6 +1,5 @@
 const { use } = require("../../playwright.config");
 const {fileName} = require('../utilities/utility');
-const authFile = '../../.auth/user.json';
 
 module.exports = {
   login: async (page) => {
@@ -30,8 +29,6 @@ module.exports = {
 
     await page.locator(login.inputOktaUsername).fill(use.username);
     await page.click(login.btnSignin);
-
-    await page.context().storageState({ path: authFile });
 
     await page.screenshot({ path: `artifacts/${fileName().short}/screenshots/${fileName().full}_okta_login.png` });
   },

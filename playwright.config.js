@@ -30,8 +30,8 @@ module.exports = defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    username: atob(`${process.env.AUTH_USERNAME}`),
-    password: atob(`${process.env.AUTH_PASSWORD}`),
+    username: `${process.env.AUTH_USERNAME}`,
+    password: `${process.env.AUTH_PASSWORD}`,
     storageState: ".auth/user.json",
     testIdAttribute: 'data-testid',
   },

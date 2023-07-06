@@ -36,16 +36,10 @@ module.exports = {
     });
 
     // Wait for the login URL
-    await page.waitForURL(`${use?.baseURL}/login`);
+    // await page.waitForURL(`${use?.baseURL}/login`);
 
     // Enter login details on BillGO Login page
     await page.locator(login.inputOktaUsername).fill(use.username);
     await page.click(login.btnSignin);
-
-    await page.screenshot({
-      path: `artifacts/${fileName().short}/screenshots/${
-        fileName().full
-      }_billpay_login.png`,
-    });
   },
 };

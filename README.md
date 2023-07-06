@@ -41,3 +41,6 @@ https://playwright.dev/docs/api/class-test
 
 session management
 https://timdeschryver.dev/blog/fast-and-easy-authentication-with-playwright#usage-with-code-generation
+
+Avoid wait
+https://dev.to/checkly/avoiding-hard-waits-in-playwright-and-puppeteer-272

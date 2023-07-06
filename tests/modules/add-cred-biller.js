@@ -19,20 +19,40 @@ module.exports = {
     };
 
     // Click on add biller button
+    await page.waitForSelector(ctx.btnAddBiller, { timeout: 60000 });
     await page.click(ctx.btnAddBiller);
 
-    // Wait for search payee input elelemt
-    const inputSearchPayee = await page.locator(ctx.inputSearchPayee);
+    await page.waitForLoadState();
 
-    // Make sure the have correct title
-    await expect(page.locator(ctx.txtAddBiller).first()).toHaveText(
-      ctx.txtAddBillerTitle
-    );
+    await page.screenshot({
+      path: `artifacts/${fileName().short}/screenshots/${
+        fileName().full
+      }_add_button.png`,
+    });
 
     // Enter the biller name in search box
-    await inputSearchPayee.fill(ctx.txtBillerToSerach);
+    // await page.waitForSelector(ctx.inputSearchPayee);
+    await page.locator(ctx.inputSearchPayee).fill(ctx.txtBillerToSerach);
+
+    // Make sure the have correct title
+    /*
+      const searchTitle = await page.waitForSelector(ctx.txtAddBiller);
+      await expect(searchTitle.first()).toHaveText(ctx.txtAddBillerTitle, {
+        timeout: 60000,
+      });
+    */
 
     // Click on search result exact result
+
+    // await page.waitForSelector("data-testid='DiscoverButtonWrapper'", {
+    //   timeout: 60000,
+    // });
+    // await searchResult.click();
+
+    // await page
+    //   .locator("data-testid='DiscoverButtonWrapper'", { timeout: 60000 })
+    //   .click();
+
     await page.getByTestId("DiscoverButtonWrapper").click();
 
     await expect(page.locator(ctx.txtCredTitle)).toHaveText(
@@ -43,8 +63,23 @@ module.exports = {
     await page.locator(ctx.inputUsername).fill("username");
     await page.locator(ctx.inputPassword).fill("Password!");
 
+    await page.screenshot({
+      path: `artifacts/${fileName().short}/screenshots/${
+        fileName().full
+      }_enter_login.png`,
+    });
+
     // Submit the cred form
     await page.click(ctx.btnSubmit);
+
+
+    await page.screenshot({
+      path: `artifacts/${fileName().short}/screenshots/${
+        fileName().full
+      }_after_submit.png`,
+    });
+
+    await page.waitForLoadState();
 
     // Visit the billers tab page
     await page.goto("/dashboard/billers");

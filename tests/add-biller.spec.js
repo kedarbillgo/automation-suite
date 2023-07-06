@@ -1,9 +1,9 @@
 // @ts-check
-const { test, expect } = require("@playwright/test");
+const { test } = require("@playwright/test");
 const { login } = require("./modules/login");
 const { addCredBiller } = require("./modules/add-cred-biller");
 const { fileName } = require("./utilities/utility");
-const { use } = require("../playwright.config");  
+const { use } = require("../playwright.config");
 
 test.describe("Visit Billers Tab & Add Cread Biller", async () => {
   let page;
@@ -25,20 +25,10 @@ test.describe("Visit Billers Tab & Add Cread Biller", async () => {
     // click on Billers Tab
     await page.locator("#blgo-Billers").click();
 
+    // Wait for Billers Tab get open
     await page.waitForURL(`${use?.baseURL}/dashboard/billers`);
 
-    await page.screenshot({
-      path: `artifacts/${fileName().short}/screenshots/${
-        fileName().full
-      }_billers_tab.png`,
-    });
-
+    // Add Cred Biller
     await addCredBiller(page);
-
-  });
-
-  test.afterAll(async ({ browser }) => {
-    await context.close();
-    await browser.close();
   });
 });

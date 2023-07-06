@@ -85,3 +85,18 @@ module.exports = defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
+
+
+
+
+
+
+
+
+
+await page.waitForURL(`${use?.baseURL}}/dashboard/billers`);
+  await expect(page).toHaveURL(/bills/);
+  test.afterAll(async ({ browser }) => {
+    await context.close();
+    await browser.close();
+  });

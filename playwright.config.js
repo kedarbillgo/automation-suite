@@ -81,7 +81,7 @@ module.exports = defineConfig({
   /* Run your local dev server before starting the tests */
   webServer: {
     command: 'npm run start',
-    url: 'https://billgo.oktapreview.com/home/bookmark/0oa1kn6q3zUNqNz2L1d7/2557',
+    // url: 'http://127.0.0.1:3000',
     reuseExistingServer: !process.env.CI,
   },
 });

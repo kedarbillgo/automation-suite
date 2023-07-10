@@ -4,6 +4,7 @@
   "description": "automation suite for testing",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build && next start",
     "test": "npx playwright test --ui",
     "chrome": "cypress run --headed"
   },

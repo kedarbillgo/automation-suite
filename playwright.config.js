@@ -83,6 +83,6 @@ module.exports = defineConfig({
     command: 'npm run start',
     // url: 'http://127.0.0.1:3000',
     url: "https://billpay.billgo-sandbox.com",
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: true,
   },
 });

@@ -44,3 +44,7 @@ https://timdeschryver.dev/blog/fast-and-easy-authentication-with-playwright#usag
 
 Avoid wait
 https://dev.to/checkly/avoiding-hard-waits-in-playwright-and-puppeteer-272
+
+
+Github playwright 
+https://snyk.io/blog/how-to-add-playwright-tests-pr-ci-github-actions/

@@ -79,10 +79,9 @@ module.exports = defineConfig({
   globalTimeout: 60 * 60 * 100,
 
   /* Run your local dev server before starting the tests */
-  webServer: {
-    command: 'npm run start',
-    // url: 'http://127.0.0.1:3000',
-    url: "https://billpay.billgo-sandbox.com",
-    reuseExistingServer: true,
-  },
+  // webServer: {
+  //   command: 'npm run start',
+  //   url: 'http://127.0.0.1:3000',
+  //   reuseExistingServer: true,
+  // },
 });

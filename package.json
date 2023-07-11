@@ -4,7 +4,8 @@
   "description": "automation suite for testing",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open",
+    "start": "npm run build && next start",
+    "test": "npx playwright test --ui",
     "chrome": "cypress run --headed"
   },
   "repository": {
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/kedarbillgo/automation-suite#readme",
   "devDependencies": {
+    "@playwright/test": "^1.35.1",
     "dotenv": "^16.0.3"
   }
 }

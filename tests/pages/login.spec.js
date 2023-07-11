@@ -1,8 +1,8 @@
 // @ts-check
 
 const { test, expect } = require("@playwright/test");
-const { login } = require("./modules/login");
-const { fileName } = require("./utilities/utility");
+const { login } = require("../modules/login");
+const { fileName } = require("../utilities/utility");
 
 test.describe("User Login", async () => {
   let page;

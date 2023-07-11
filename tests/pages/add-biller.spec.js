@@ -1,9 +1,9 @@
 // @ts-check
 const { test } = require("@playwright/test");
-const { login } = require("./modules/login");
-const { addCredBiller } = require("./modules/add-cred-biller");
-const { fileName } = require("./utilities/utility");
-const { use } = require("../playwright.config");
+const { login } = require("../modules/login");
+const { addCredBiller } = require("../modules/add-cred-biller");
+const { fileName } = require("../utilities/utility");
+const { use } = require("../../playwright.config");
 
 test.describe("Visit Billers Tab & Add Cread Biller", async () => {
   let page;

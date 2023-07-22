@@ -35,7 +35,6 @@ Visit https://playwright.dev/docs/intro for more information. ✨
 
 Happy hacking! 🎭
 
-
 Hooks
 https://playwright.dev/docs/api/class-test
 
@@ -45,6 +44,9 @@ https://timdeschryver.dev/blog/fast-and-easy-authentication-with-playwright#usag
 Avoid wait
 https://dev.to/checkly/avoiding-hard-waits-in-playwright-and-puppeteer-272
 
-
 Github playwright 
 https://snyk.io/blog/how-to-add-playwright-tests-pr-ci-github-actions/
+
+Github Dispatch
+https://stackoverflow.com/questions/62736315/invoke-github-actions-workflow-manually-and-pass-parameters
+https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/

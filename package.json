@@ -1,36 +1,20 @@
 {
-  "name": "automation-suite",
+  "name": "playwright_demo",
   "version": "1.0.0",
-  "description": "automation suite for testing",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && next start",
-    "test": "npx playwright test --ui",
-    "chrome": "cypress run --headed"
+    "manualbiller": "npx playwright test --config ./src/playwright.config.js ./src/tests/add-biller/add-manual-biller.spec.js --project=\"chromium\" --workers 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kedarbillgo/automation-suite.git"
-  },
-  "keywords": [
-    "Cypress",
-    "Testing",
-    "Testing",
-    "UI",
-    "Testing",
-    "UI",
-    "Automation",
-    "React",
-    "Preact"
-  ],
-  "author": "kedar.kulkarni@billgo.com",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kedarbillgo/automation-suite/issues"
-  },
-  "homepage": "https://github.com/kedarbillgo/automation-suite#readme",
   "devDependencies": {
     "@playwright/test": "^1.35.1",
-    "dotenv": "^16.0.3"
+    "allure-playwright": "^2.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "winston": "^3.9.0"
   }
 }

@@ -1,0 +1,119 @@
+{
+  "cookies": [
+    {
+      "name": "okta-oauth-redirect-params",
+      "value": "{%22responseType%22:%22code%22%2C%22state%22:%22MP8f7VkxSx23Fre9DKUe71krwoXO27xXPgd9pyeDb9NNHBVDTQhrq2OXBeZ0eIXp%22%2C%22nonce%22:%22bHknw8zowCcyLKk4Weqc8bcEj5jR0wkkplNefSM869IQ5IgiFD1kPtrj83hn0Mf9%22%2C%22scopes%22:[%22openid%22%2C%22profile%22%2C%22email%22]%2C%22clientId%22:%220oahr89dbLsyBz3hY1d5%22%2C%22urls%22:{%22issuer%22:%22https://billgo.oktapreview.com/oauth2/default%22%2C%22authorizeUrl%22:%22https://billgo.oktapreview.com/oauth2/default/v1/authorize%22%2C%22userinfoUrl%22:%22https://billgo.oktapreview.com/oauth2/default/v1/userinfo%22%2C%22tokenUrl%22:%22https://billgo.oktapreview.com/oauth2/default/v1/token%22%2C%22revokeUrl%22:%22https://billgo.oktapreview.com/oauth2/default/v1/revoke%22%2C%22logoutUrl%22:%22https://billgo.oktapreview.com/oauth2/default/v1/logout%22}%2C%22ignoreSignature%22:false}",
+      "domain": "a.billgo-sandbox.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "okta-oauth-nonce",
+      "value": "bHknw8zowCcyLKk4Weqc8bcEj5jR0wkkplNefSM869IQ5IgiFD1kPtrj83hn0Mf9",
+      "domain": "a.billgo-sandbox.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "okta-oauth-state",
+      "value": "MP8f7VkxSx23Fre9DKUe71krwoXO27xXPgd9pyeDb9NNHBVDTQhrq2OXBeZ0eIXp",
+      "domain": "a.billgo-sandbox.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "JSESSIONID",
+      "value": "8CC218AECBBE62AFD4D6599C94FCB9AC",
+      "domain": "billgo.oktapreview.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "t",
+      "value": "default",
+      "domain": "billgo.oktapreview.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "DT",
+      "value": "DI1hdMXx1DUSaynnWKiLu7lxg",
+      "domain": "billgo.oktapreview.com",
+      "path": "/",
+      "expires": 1721757921.289199,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "t",
+      "value": "default",
+      "domain": "ssobillgo.okta.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "DT",
+      "value": "DI1kjjyVQUCTfKBRh1Jx5BjuQ",
+      "domain": "ssobillgo.okta.com",
+      "path": "/",
+      "expires": 1721757922.282333,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ln",
+      "value": "nishith.padh@billgo.com",
+      "domain": "ssobillgo.okta.com",
+      "path": "/",
+      "expires": 1718733923,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "JSESSIONID",
+      "value": "83629F6D57ADF62F9B069139CFD69CE1",
+      "domain": "ssobillgo.okta.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://a.billgo-sandbox.com",
+      "localStorage": [
+        {
+          "name": "okta-cache-storage",
+          "value": "{\"https://billgo.oktapreview.com/oauth2/default/.well-known/openid-configuration\":{\"expiresAt\":1687284320,\"response\":{\"issuer\":\"https://billgo.oktapreview.com/oauth2/default\",\"authorization_endpoint\":\"https://billgo.oktapreview.com/oauth2/default/v1/authorize\",\"token_endpoint\":\"https://billgo.oktapreview.com/oauth2/default/v1/token\",\"userinfo_endpoint\":\"https://billgo.oktapreview.com/oauth2/default/v1/userinfo\",\"registration_endpoint\":\"https://billgo.oktapreview.com/oauth2/v1/clients\",\"jwks_uri\":\"https://billgo.oktapreview.com/oauth2/default/v1/keys\",\"response_types_supported\":[\"code\",\"id_token\",\"code id_token\",\"code token\",\"id_token token\",\"code id_token token\"],\"response_modes_supported\":[\"query\",\"fragment\",\"form_post\",\"okta_post_message\"],\"grant_types_supported\":[\"authorization_code\",\"implicit\",\"refresh_token\",\"password\",\"urn:ietf:params:oauth:grant-type:device_code\"],\"subject_types_supported\":[\"public\"],\"id_token_signing_alg_values_supported\":[\"RS256\"],\"scopes_supported\":[\"openid\",\"profile\",\"email\",\"address\",\"phone\",\"offline_access\",\"device_sso\"],\"token_endpoint_auth_methods_supported\":[\"client_secret_basic\",\"client_secret_post\",\"client_secret_jwt\",\"private_key_jwt\",\"none\"],\"claims_supported\":[\"iss\",\"ver\",\"sub\",\"aud\",\"iat\",\"exp\",\"jti\",\"auth_time\",\"amr\",\"idp\",\"nonce\",\"name\",\"nickname\",\"preferred_username\",\"given_name\",\"middle_name\",\"family_name\",\"email\",\"email_verified\",\"profile\",\"zoneinfo\",\"locale\",\"address\",\"phone_number\",\"picture\",\"website\",\"gender\",\"birthdate\",\"updated_at\",\"at_hash\",\"c_hash\"],\"code_challenge_methods_supported\":[\"S256\"],\"introspection_endpoint\":\"https://billgo.oktapreview.com/oauth2/default/v1/introspect\",\"introspection_endpoint_auth_methods_supported\":[\"client_secret_basic\",\"client_secret_post\",\"client_secret_jwt\",\"private_key_jwt\",\"none\"],\"revocation_endpoint\":\"https://billgo.oktapreview.com/oauth2/default/v1/revoke\",\"revocation_endpoint_auth_methods_supported\":[\"client_secret_basic\",\"client_secret_post\",\"client_secret_jwt\",\"private_key_jwt\",\"none\"],\"end_session_endpoint\":\"https://billgo.oktapreview.com/oauth2/default/v1/logout\",\"request_parameter_supported\":true,\"request_object_signing_alg_values_supported\":[\"HS256\",\"HS384\",\"HS512\",\"RS256\",\"RS384\",\"RS512\",\"ES256\",\"ES384\",\"ES512\"],\"device_authorization_endpoint\":\"https://billgo.oktapreview.com/oauth2/default/v1/device/authorize\"}}}"
+        },
+        {
+          "name": "okta-pkce-storage",
+          "value": "{}"
+        }
+      ]
+    }
+  ]
+}

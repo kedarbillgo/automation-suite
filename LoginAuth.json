@@ -1,0 +1,124 @@
+{
+  "cookies": [
+    {
+      "name": "t",
+      "value": "default",
+      "domain": "billgo.oktapreview.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "DT",
+      "value": "DI1vg3dt-f1RlWo1VBM2YkHFA",
+      "domain": "billgo.oktapreview.com",
+      "path": "/",
+      "expires": 1723720737.117788,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sid",
+      "value": "102v1exEXODRmGeb7IY9jkhKQ",
+      "domain": "billgo.oktapreview.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "proximity_023fbdcb174ad79d21ba5ec4b588a108",
+      "value": "eyJ6aXAiOiJERUYiLCJwMnMiOiJJSmVTTWVadjg3VzZfd0hyLTV1SWVRIiwicDJjIjoxMDAwLCJ2ZXIiOiIxIiwiZW5jIjoiQTI1NkdDTSIsImFsZyI6IlBCRVMyLUhTNTEyK0EyNTZLVyJ9.VRDTS6j5LVrY_kpTwqgCapPnzJX9Seb2LiVeGcQxBMsPsOCZTWMGlw.yJqQpE2CjV-XnMPQ.6FfYc-nxTN2hW_R9uV9phkTyefTswApL2lGMOmwqadTB644grtiBKQ3-YyAcv7R98ZFE5Oop4o51EqGDXGNF8cleDrT5kwg0PaQBL092sRAYj-MdxZ3MvOOr5CVRIlvJfyEtJ3O1uTJszqlY7lpoe2n1_81ECbbfkBCyO_zxT8kg1Q.LoHpYC04NOwgShwHnJtzDw",
+      "domain": "billgo.oktapreview.com",
+      "path": "/",
+      "expires": 1720696742.350655,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "JSESSIONID",
+      "value": "E369B5656B0E58F37A766F24BF0127D3",
+      "domain": "billgo.oktapreview.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fs_lua",
+      "value": "1.1689160746542",
+      "domain": ".billgo-sandbox.com",
+      "path": "/",
+      "expires": 1689162546,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "fs_uid",
+      "value": "#14C50E#834b8ef8-b466-4ad4-93a2-3559972deda2:1114cd80-94bc-4313-9694-cbb7c5b81461:1689160746542::1#/1720696745",
+      "domain": ".billgo-sandbox.com",
+      "path": "/",
+      "expires": 1720696745,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_dd_s",
+      "value": "rum=1&id=a6223396-cc99-4926-97a0-f8136461148f&created=1689160745746&expire=1689161650559",
+      "domain": "billpay.billgo-sandbox.com",
+      "path": "/",
+      "expires": 1689161650,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://login.okta.com",
+      "localStorage": [
+        {
+          "name": "okta_accounts",
+          "value": "[{\"id\":\"https://billgo.oktapreview.com::UI.Development@billgo.com\",\"login\":\"UI.Development@billgo.com\",\"displayName\":\"UI Development\",\"origin\":\"https://billgo.oktapreview.com\",\"lastUpdated\":\"2023-07-12T11:19:01.194Z\"}]"
+        }
+      ]
+    },
+    {
+      "origin": "https://billpay.billgo-sandbox.com",
+      "localStorage": [
+        {
+          "name": "ld:$anonUserId",
+          "value": "e9b37910-20a5-11ee-8107-7d0da94dfd64"
+        },
+        {
+          "name": "_fs_lua",
+          "value": "1.1689160746542"
+        },
+        {
+          "name": "hosted-billpay-okta-user-id",
+          "value": "UI.Development@billgo.com"
+        },
+        {
+          "name": "ld:63a4847088879e116f0a6b7f:$diagnostics",
+          "value": "{\"dataSinceDate\":1689160745993,\"droppedEvents\":0,\"eventsInLastBatch\":0,\"streamInits\":[]}"
+        },
+        {
+          "name": "BGBP_TEST_VALUE_LOCAL_STORAGE",
+          "value": "true"
+        },
+        {
+          "name": "_fs_uid",
+          "value": "#14C50E#834b8ef8-b466-4ad4-93a2-3559972deda2:1114cd80-94bc-4313-9694-cbb7c5b81461:1689160746542::1#/1720696745"
+        }
+      ]
+    }
+  ]
+}
